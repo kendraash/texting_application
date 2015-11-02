@@ -12,12 +12,14 @@ gem 'bootstrap-sass'
 gem "letter_opener"
 gem 'chartkick'
 gem 'devise'
+gem 'rest-client'
 
 group :development do
   gem 'byebug'
   gem 'web-console'
   gem 'spring'
   gem 'quiet_assets'
+  gem 'dotenv-rails'
 end
 
 group :test, :development do
