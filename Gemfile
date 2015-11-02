@@ -19,10 +19,10 @@ group :development do
   gem 'web-console'
   gem 'spring'
   gem 'quiet_assets'
-  gem 'dotenv-rails'
 end
 
 group :test, :development do
+  gem 'dotenv-rails'
   gem 'rspec-rails'
   gem 'launchy'
   gem 'pry'
@@ -36,6 +36,9 @@ group :test do
   gem 'factory_girl_rails'
   gem 'simplecov', require: false
   gem 'poltergeist'
+  gem "vcr"
+  gem "webmock"
+
 
 end
 

@@ -1,0 +1,17 @@
+<%= render "layouts/error", object: @message %>
+<h2>Send a text:</h2>
+<%= form_for(@message) do |f| %>
+  <div class="row">
+    <div class="field col-xs-3">
+      <%= f.label :to %>
+      <%= f.phone_field :to %>
+    </div>
+    <div class="field col-xs-3">
+      <%= f.label :body %>
+      <%= f.text_field :body %>
+    </div>
+    <div class="actions">
+      <%= f.submit class: "btn btn-sm btn-default col-xs-3" %>
+    </div>
+  </div>
+<% end %>

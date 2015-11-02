@@ -1,0 +1,59 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://AC4aaa4850e14a8a60494913179ecd44bd:06439abc95cd81f97adc0c4a56ca2118@api.twilio.com/2010-04-01/Accounts/AC4aaa4850e14a8a60494913179ecd44bd/Messages.json
+    body:
+      encoding: US-ASCII
+      string: Body=hi&To=5039463641&From=1111111
+    headers:
+      Accept:
+      - "*/*; q=0.5, application/xml"
+      Accept-Encoding:
+      - gzip, deflate
+      Content-Length:
+      - '34'
+      Content-Type:
+      - application/x-www-form-urlencoded
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 400
+      message: BAD REQUEST
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match,
+        If-Unmodified-Since
+      Access-Control-Allow-Methods:
+      - GET, POST, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - ETag
+      Content-Type:
+      - application/json
+      Date:
+      - Mon, 02 Nov 2015 18:20:49 GMT
+      Twilio-Request-Duration:
+      - '0.142'
+      Twilio-Request-Id:
+      - RQ0b972f5dfc4d46d39e9d30932cd28b4a
+      X-Powered-By:
+      - AT-5000
+      X-Shenanigans:
+      - none
+      Content-Length:
+      - '169'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"code": 21212, "message": "The ''From'' number 1111111 is not a valid
+        phone number or shortcode.", "more_info": "https://www.twilio.com/docs/errors/21212",
+        "status": 400}'
+    http_version:
+  recorded_at: Mon, 02 Nov 2015 18:20:49 GMT
+recorded_with: VCR 2.9.3
